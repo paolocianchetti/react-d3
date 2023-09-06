@@ -1,18 +1,16 @@
-# La mia prima app in React!
+# Continuiamo a lavorare su EPICBOOKS!
 
-1. Utilizza il template create-react-app.
+1. Crea un componente di nome SingleBook come classe. Questo componente riceverà un libro come prop, e renderizzerà la sua copertina e il suo titolo. Utilizza il componente Card di react-bootstrap (la struttura dell'oggetto del libro sarà quella dei libri dell'ultimo esercizio!)
 
-2. Utilizza e importa bootstrap
+2. Modifica il componente LatestRelease in modo che il .map() renderizzi non delle immagini isolate, ma una lista di componenti SingleBook
 
-3. Il componente MyNav renderizza una navbar di bootstrap con i seguenti
-   link: Home, About e Browse.
-   Nota: non conosciamo ancora come re-indirizzare l'utente su una diversa pagina, quindi ho inserito '#' come href su ogni link.
+3. Crea un input controllato all'interno del componente LatestRelease;
+Il componente deve utilizzare il valore di questo input come filtro e mostrare solamente
+i libri che contengono nel titolo il testo cercato.
+(Suggerimento: salva il contenuto nel campo di testo nello stato del componente e utilizzalo insieme a .filter, .includes e .map)
 
-4. Il componente MyFooter renderizza un footer per l'applicazione.
-
-5. Il componente Welcome renderizza un Jumbotron e un titolo per l'applicazione.
-
-6. Il componente LatestRelease legge dal file fantasy.json i dati dei libri e li renderizza in una griglia di Cards contenenti le copertine dei libri.
+EXTRA: Crea lo stato all'interno di SingleBook e inserisci una proprietà booleana di nome 'selected'.
+Se selected ha valore true, la copertina del libro deve aggiungere un bordo rosso.
 
 # Getting Started with Create React App
 
